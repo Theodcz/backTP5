@@ -21,4 +21,4 @@ jobs:
 
       - name: Build and push Docker image
         run: |
-          docker buildx build --push --tag ghcr.io/${{github.backTP5 }}/back:latest .
+          docker buildx build --push --tag ghcr.io/${{github.repository_owner }}/back:latest .
