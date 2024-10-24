@@ -1,6 +1,13 @@
-FROM node:18-alpine
+FROM node:latest
+
 WORKDIR /app
+
 COPY . .
+
 RUN npm install
-EXPOSE 5001
-CMD ["npm", "start"]
+
+ENTRYPOINT [ "npm", "run" ]
+
+EXPOSE 3000
+
+CMD [ "start" ]
