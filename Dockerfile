@@ -8,6 +8,6 @@ RUN npm install
 
 ENTRYPOINT [ "npm", "run" ]
 
-EXPOSE 3000
+EXPOSE 5001
 
 CMD [ "start" ]
